@@ -1,0 +1,74 @@
+#nav
+{
+width:100%;
+height:80px;
+background-image:linear-gradient(black,gray);
+float:left;
+}
+body
+{
+margin:0px;
+}
+#main
+{
+text-transform:uppercase;
+font-size:40px;
+color:cyan;
+font-family:monospace;
+/* to display all list items horizontal*/
+display:flex;
+/*remove bullets*/
+list-style-type:none;
+margin-left:170px;
+font-weight:bold;
+/*to shift content exact center vertically*/
+margin-top:13px;
+}
+.sub
+{
+margin-left:30px;
+}
+a{
+color:cyan;
+text-decoration:none;
+}
+.sub:hover
+{
+border-bottom:8px solid hotpink;
+border-radius:15px;
+background-color:purple;
+}
+/* to display hidden html list*/
+/*
+1).sub is selector for main list items on which user will place cursor
+2)hover pseudo class will help  to display content if user place cursor
+3)#sub-main is selector given for sub list of subjects which has to be display on next line.
+*/
+.subs:hover #sub-main
+{
+display:block;
+
+position:absolute;
+}
+.subs
+{
+margin-left:30px;
+}
+.subs:hover
+{
+border-bottom:8px solid hotpink;
+border-radius:15px;
+background-color:purple;
+}
+#sub-main
+{
+background-color:black;
+list-style-type:none;
+/* to hide sub html list of subjects*/
+display:none;
+border:10px solid hotpink;
+}
+.sub1:hover
+{
+text-shadow:0px 0px 10px white;
+}
